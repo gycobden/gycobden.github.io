@@ -8,7 +8,7 @@ import Project from './sections/Project';
 import Skill from './sections/Skill';
 
 // TODO: replace asset images with your own
-import profilePic from './assets/2025-04-04 15.51.44-2.jpg';
+import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
 import accentSVG from './assets/accent.svg';
 import project1Thumbnail from './assets/project1-thumbnail.png';
 import project2Thumbnail from './assets/project2-thumbnail.png';
@@ -41,7 +41,7 @@ function App() {
 
   const user = { //TODO: Replace with your about
     name: yourName,
-    role: 'BS Computer Science at UW',
+    role: 'Computer Science at UW',
     bio: 'I\'m doing some cool stuff!',
     github: yourGithub,
     linkedin: yourLinkedin,
