@@ -8,7 +8,7 @@ import Project from './sections/Project';
 import Skill from './sections/Skill';
 
 // TODO: replace asset images with your own
-import profilePic from './assets/profile-pic.jpg';
+import profilePic from './assets/2025-04-04 15.51.44-2.jpg';
 import accentSVG from './assets/accent.svg';
 import project1Thumbnail from './assets/project1-thumbnail.png';
 import project2Thumbnail from './assets/project2-thumbnail.png';
@@ -23,12 +23,12 @@ function App() {
   //TODO: under public replace the Resume.pdf file with your most recent resume for download
   //TODO: in index.html replace the website title and icon
   //TODO: in package.json replace the homepage with your own
-  const yourName = "MayTrix"; // TODO: Replace with your name
-  const yourEmail = 'your.email@example.com'; // Replace with your email
-  const yourLinkedin = 'https://www.linkedin.com/in/yourlinkedinprofile'; // Replace with your LinkedIn profile
-  const yourGithub = 'https://github.com/yourgithubusername'; // Replace with your GitHub profile
-  const yourPhoneNumber = '+1 123-456-7890'; // Replace with your phone number
-  const yourProfilePictureAltText = 'A picture of a person with short spiky rainbow hair'; // Replace with your Profile Picture Alt Text
+  const yourName = "Graham Cobden"; // TODO: Replace with your name
+  const yourEmail = 'gycobden@gmail.com'; // Replace with your email
+  const yourLinkedin = 'https://www.linkedin.com/in/gycobden'; // Replace with your LinkedIn profile
+  const yourGithub = 'https://github.com/gycobden'; // Replace with your GitHub profile
+  // const yourPhoneNumber = '+1 206 384 5042'; // Replace with your phone number
+  const yourProfilePictureAltText = 'A picture of Graham next to a cherry tree'; // Replace with your Profile Picture Alt Text
 
   const showSections: { [key: string]: boolean } = { //TODO: set any section you don't want to "false"
     about: true,
@@ -41,8 +41,8 @@ function App() {
 
   const user = { //TODO: Replace with your about
     name: yourName,
-    role: 'Your Role',
-    bio: 'Your Bio',
+    role: 'BS Computer Science at UW',
+    bio: 'I\'m doing some cool stuff!',
     github: yourGithub,
     linkedin: yourLinkedin,
     decorativeImage: accentSVG,
@@ -114,7 +114,7 @@ function App() {
     { key: 'projects', Component: <Project projects={userProjects} /> },
     //TODO: If you don't provide certian information for contact, remove that prop, fo example, no phone number would look like:
     // { key: 'contact', Component: <Contact emailAddress={yourEmail} linkedinURL={yourLinkedin} githubURL={yourGithub} /> },
-    { key: 'contact', Component: <Contact emailAddress={yourEmail} linkedinURL={yourLinkedin} githubURL={yourGithub} phoneNumber={yourPhoneNumber} /> },
+    { key: 'contact', Component: <Contact emailAddress={yourEmail} linkedinURL={yourLinkedin} githubURL={yourGithub} /*phoneNumber={yourPhoneNumber}*/ /> },
     //add or change sections as needed
   ];
 
@@ -130,7 +130,7 @@ function App() {
           <div>
             {/* TODO: Replace with your own resume file */}
             <a href="/Resume.pdf" download="Resume.pdf">
-              <button className="download-button">Download Resume</button>
+              <button className="download-button">will make this my resume</button>
             </a>
           </div>
         </div>
