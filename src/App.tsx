@@ -25,7 +25,7 @@ function App() {
   //TODO: in package.json replace the homepage with your own
   const yourName = "Graham Cobden"; // TODO: Replace with your name
   const yourEmail = 'gycobden@gmail.com'; // Replace with your email
-  const yourLinkedin = 'https://www.linkedin.com/in/gycobden'; // Replace with your LinkedIn profile
+  const yourLinkedin = 'https://www.linkedin.com/in/graham-cobden'; // Replace with your LinkedIn profile
   const yourGithub = 'https://github.com/gycobden'; // Replace with your GitHub profile
   // const yourPhoneNumber = '+1 206 384 5042'; // Replace with your phone number
   const yourProfilePictureAltText = 'A picture of Graham next to a cherry tree'; // Replace with your Profile Picture Alt Text
