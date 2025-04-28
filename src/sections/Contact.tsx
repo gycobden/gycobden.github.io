@@ -15,7 +15,7 @@ const Contact: React.FC<ContactSectionProps> = ({ emailAddress, linkedinURL, git
     <section id="contact">
       <div className="section">
       <h2>Contact Me</h2>
-      <p>Add your contact information here.</p>
+      {/* <p>Add your contact information here.</p> */}
       <div className="contact-options" aria-hidden="true">
         {emailAddress && (
           <div className="contact-option" title={`Click to email ${emailAddress}`}>

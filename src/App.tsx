@@ -10,8 +10,8 @@ import Skill from './sections/Skill';
 // TODO: replace asset images with your own
 import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
 import accentSVG from './assets/accent.svg';
-import project1Thumbnail from './assets/project1-thumbnail.png';
-import project2Thumbnail from './assets/project2-thumbnail.png';
+import project1Thumbnail from './assets/minigoogle.png';
+// import project2Thumbnail from './assets/project2-thumbnail.png';
 
 //defines the sections of the website
 interface Section {
@@ -41,8 +41,12 @@ function App() {
 
   const user = { //TODO: Replace with your about
     name: yourName,
-    role: 'Computer Science at UW',
-    bio: 'I\'m doing some cool stuff!',
+    role: 'a Computer Science major at UW',
+    bio: 'I\'m interested in the intersection between AI, modern forms of media, '
+    + 'personal interactions, and the flow of information. I\'m currently working on '
+    + 'a project to make it easier to identify online misinformation. On the less computery side, I '
+    + 'enjoy training for triathlons, jamming with my saxophone, and learning '
+    + 'how to cook (passably)!',
     github: yourGithub,
     linkedin: yourLinkedin,
     decorativeImage: accentSVG,
@@ -51,24 +55,29 @@ function App() {
 
   const userExperiences = [ //TODO: Replace with your experiance
     {
-      position: 'Software Development Intern',
-      date: 'May 2022 - August 2022',
-      company: 'ABC Tech Solutions, New York, NY',
-      companyLink: 'https://www.abctechsolutions.com',
+      position: 'Software Developer',
+      date: 'October 2023 - present',
+      company: 'Synaptech, Seattle, WA',
+      companyLink: 'https://synaptechuw.org/',
       highlights: [
-        'Collaborated with a team of developers to create and implement new features for the company\'s web application.',
-        'Assisted in debugging and troubleshooting issues in existing codebase.',
-        'Participated in code reviews and provided feedback on colleagues\' code.',
+        'Developed movement functions in Python for Arduino-based car controlled by eye movement',
+        'Engineered a JavaScript test UI that enabled 100% faster identification of movement response errors',
+        'Resolved a critical bug that prevented accurate detection of certain screen areas by identifying rounding errors in'
+        + 'eye location data processing implementation, leading to a 50% improvement in eye tracking accuracy.',
+        'Presented at the university’s master’s research symposium, showcasing potential future applications for disability'
+        +'management to over 200 attendees',
       ],
     },
     {
-      position: 'Computer Science Tutor',
-      date: 'September 2021 - Present',
-      company: 'XYZ University, Department of Computer Science, City, ST',
+      position: 'Backend Developer, Insider team',
+      date: 'December 2023 - June 2024',
+      company: 'Husky Coding Project',
+      companyLink: 'https://hcp-uw.vercel.app/',
       highlights: [
-        'Provided one-on-one tutoring to undergraduate students in computer science courses.',
-        'Assisted students with understanding programming concepts and assignments in languages such as Java, Python, and C++.',
-        'Developed and conducted workshops on data structures and algorithms.',
+        'Led the back-end development for a website that analyzes real-time data on politician trades, exposing possible'
+        + 'insider trading',
+        'Created and implemented Python web-scraper and SQL ETL pipeline, sorted data with self-calibrated PnL'
+        + 'algorithm that provided the front end with usable data',
       ],
     },
     // Add more experience items as needed
@@ -77,32 +86,34 @@ function App() {
   const userEducation = [ //TODO: Update Education
     {
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'XYZ University',
-      graduationDate: 'May 2024',
-      institutionLink: 'https://www.xyzuniversity.edu',
+      institution: 'University of Washington',
+      graduationDate: 'June 2027',
+      institutionLink: 'https://www.washington.edu/',
     },
     // Add more education entries as needed
   ];
   
   // TODO: Update the skills list with your own
   // Note: Most tech skills include icons which will show under "SkillsIcons", you may wish to add more to the component if you have something specific
-  const userSkillsToShow = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Java', 'Python', 'Git']; // Example skills
+  const userSkillsToShow = ['HTML', 'CSS', 'JavaScript', 'React', 'Java', 'Python', 'C', 'C++', 'OCaml', 'Git']; // Example skills
   const userNonTechSkills = ['Communication', 'Problem Solving', 'Teamwork'];
 
   const userProjects = [ //TODO: Update with any major Project you have designed
     {
       image: project1Thumbnail,
-      imageAltText: "A resume webpage that has a green header and black background with rainbow colored connected nodes.",
-      title: "Project 1",
-      description: "Add project description here.",
-      learnMoreURL: "https://leejmorel.github.io/#/"
-    },
-    {
-      image: project2Thumbnail,
-      imageAltText: "An application welcome screen of the software PathKit",
-      title: "Project 2",
-      description: "Add project description here."
-    },
+      imageAltText: "A light replication of Google's search engine.",
+      title: "Mini Google",
+      description: "Built lightweight search engine from scratch with C and C++."  
+          + "The project contains custom-designed data structures, disk-based "
+          + "storage, a primitive frequency based ranking system, and a (sometimes) working domain!",
+      // learnMoreURL: "https://leejmorel.github.io/#/"
+    }
+    //, {
+    //   image: project2Thumbnail,
+    //   imageAltText: "An application welcome screen of the software PathKit",
+    //   title: "Project 2",
+    //   description: "Add project description here."
+    // },
     // Add more projects as needed
   ];
 
@@ -129,8 +140,8 @@ function App() {
           </div>
           <div>
             {/* TODO: Replace with your own resume file */}
-            <a href="/Resume.pdf" download="Resume.pdf">
-              <button className="download-button">will make this my resume</button>
+            <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+              <button className="download-button">Graham's Resume</button>
             </a>
           </div>
         </div>
