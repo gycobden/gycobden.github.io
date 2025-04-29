@@ -94,6 +94,11 @@ p {
   background-color: var(--text-secondary);
 }
 
+.accent-svg {
+  width: 200px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .app .section {
   display: flex;
   align-items: center;

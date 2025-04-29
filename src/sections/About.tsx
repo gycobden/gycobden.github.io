@@ -38,7 +38,12 @@ function About({ name, role, bio, github, linkedin, decorativeImage, altText }: 
           )}
         </div>
         <div className="decorative-svg">
-          <img src={decorativeImage} alt={altText} />
+          {/* <img src={decorativeImage} alt={altText} /> */}
+          <img
+            src={decorativeImage}
+            alt={altText}
+            style={{ width: '360px', height: 'auto' }} // Adjust the width as needed
+          />
         </div>
         </div>
       </div>

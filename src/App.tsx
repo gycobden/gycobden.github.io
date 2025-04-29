@@ -9,9 +9,10 @@ import Skill from './sections/Skill';
 
 // TODO: replace asset images with your own
 import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
-import accentSVG from './assets/accent.svg';
+import accentSVG from './assets/vecteezy_cherry-blossom-free-vector-background_16808159.svg';
 import project1Thumbnail from './assets/minigoogle.png';
 // import project2Thumbnail from './assets/project2-thumbnail.png';
+
 
 //defines the sections of the website
 interface Section {
@@ -85,7 +86,7 @@ function App() {
 
   const userEducation = [ //TODO: Update Education
     {
-      degree: 'Bachelor of Science in Computer Science',
+      degree: 'BS in Computer Science',
       institution: 'University of Washington',
       graduationDate: 'June 2027',
       institutionLink: 'https://www.washington.edu/',
