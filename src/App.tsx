@@ -42,7 +42,7 @@ function App() {
 
   const user = { //TODO: Replace with your about
     name: yourName,
-    role: 'a Computer Science major at UW',
+    role: 'and I\'m a Computer Science major at UW',
     bio: 'I\'m interested in the intersection between AI, modern forms of media, '
     + 'personal interactions, and the flow of information. I\'m currently working on '
     + 'a project to make it easier to identify online misinformation. On the less computery side, I '
@@ -135,16 +135,15 @@ function App() {
       {/* Header section */}
       <header>
         <div className="header-row">
-          <div className="profile-info">
-            <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
-            <h1>{yourName}</h1>
-          </div>
-          <div>
-            {/* TODO: Replace with your own resume file */}
-            <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
-              <button className="download-button">Graham's Resume</button>
-            </a>
-          </div>
+        <div className="profile-info">
+  <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
+  <div className="name-and-resume">
+    <h1>{yourName}</h1>
+    <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+      <button className="download-button">Graham's Resume</button>
+    </a>
+  </div>
+</div>
         </div>
 
         {/*Navigation Links*/}

@@ -71,7 +71,19 @@ p {
 
 .profile-info {
   display: flex;
-  align-items: center;
+  align-items: center; /* Align items vertically */
+  gap: 0px; /* Add spacing between the profile picture and the name/button */
+}
+
+.name-and-resume {
+  display: flex;
+  align-items: center; /* Align the name and button vertically */
+  gap: 30px; /* Add spacing between the name and the button */
+}
+
+.download-button {
+  padding: 8px 12px; /* Adjust button padding */
+  font-size: 14px; /* Adjust font size */
 }
 
 .profile-pic {
@@ -97,6 +109,12 @@ p {
 .accent-svg {
   width: 200px; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
+}
+
+.about-text-wrapper {
+  max-width: 600px; /* Set the maximum width */
+  margin: 0 auto; /* Center the text horizontally */
+  text-align: center; /* Optional: Center-align the text */
 }
 
 .app .section {
