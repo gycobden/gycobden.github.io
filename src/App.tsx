@@ -6,6 +6,7 @@ import Education from './sections/Education';
 import Experience from './sections/Experience';
 import Project from './sections/Project';
 import Skill from './sections/Skill';
+import Banner from './assets/okameheader.jpg';
 
 // TODO: replace asset images with your own
 import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
@@ -134,16 +135,19 @@ function App() {
     <div className="app">
       {/* Header section */}
       <header>
+        <div className='top-banner'>
+          <img src={Banner} alt="A cherry blossom tree" className="banner-image" />
+        </div>
         <div className="header-row">
-        <div className="profile-info">
-  <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
-  <div className="name-and-resume">
-    <h1>{yourName}</h1>
-    <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
-      <button className="download-button">Graham's Resume</button>
-    </a>
-  </div>
-</div>
+          <div className="profile-info">
+            <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
+            <div className="name-and-resume">
+              <h1>{yourName}</h1>
+              <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+                <button className="download-button">Graham's Resume</button>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/*Navigation Links*/}

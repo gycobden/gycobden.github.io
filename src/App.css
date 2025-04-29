@@ -1,9 +1,9 @@
 :root {
-  --text-primary: #B64E49;
-  --text-secondary: #a7e2aa;
+  --text-primary: #910024;
+  --text-secondary: #bcfbff;
   --black: #0f0e0e;
   --white: #fff;
-  --secondary: #22633b;
+  --secondary: #1783be;
   --primary: #f8f6f6;
 }
 
@@ -59,6 +59,20 @@ p {
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: var(--primary); 
+}
+
+.top-banner {
+  width: 100%; /* Make the banner span the full width of the page */
+  height: 330px; /* Adjust the height as needed */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.banner-image {
+  width: 100%; /* Full width */
+  height: 300px; /* Adjust the height to crop the image */
+  object-fit: cover; /* Crops the image to fill the container */
 }
 
 .header-row {
@@ -181,6 +195,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .about-content {
