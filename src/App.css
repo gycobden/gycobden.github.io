@@ -1,15 +1,43 @@
 :root {
-  --text-primary: #910024;
-  --text-secondary: #bcfbff;
+  --text-primary: #850012;
+  --text-secondary: #d1fcff;
   --black: #0f0e0e;
   --white: #fff;
   --secondary: #1783be;
   --primary: #f8f6f6;
+  --nav-banner: #d99d5e;
+  --nav-button: #a75400;
+  --nav-button-hover: #ffb76b;
 }
 
 #root {
   width: 100vw;
   text-align: center;
+}
+
+.navigation-banner {
+  width: 100%; /* Full width */
+  background-color: var(--nav-banner); /* Adjust to your desired background color */
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Add spacing between buttons */
+  padding: 7px 0; /* Add vertical padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.nav-button {
+  background-color: var(--nav-button); /* Adjust to your desired button color */
+  color: var(--white); /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--nav-button-hover); /* Adjust hover color */
 }
 
 nav ul a {
@@ -36,6 +64,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
@@ -46,6 +75,7 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   color: var(--black);
+  font-family: 'Georgia', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -57,13 +87,13 @@ p {
 
 .app {
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Ariel', sans-serif;
   background-color: var(--primary); 
 }
 
 .top-banner {
   width: 100%; /* Make the banner span the full width of the page */
-  height: 330px; /* Adjust the height as needed */
+  height: 180px; /* Adjust the height as needed */
   background-size: cover; /* Ensure the image covers the entire banner */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -71,7 +101,7 @@ p {
 
 .banner-image {
   width: 100%; /* Full width */
-  height: 300px; /* Adjust the height to crop the image */
+  height: 180px; /* Adjust the height to crop the image */
   object-fit: cover; /* Crops the image to fill the container */
 }
 
@@ -96,13 +126,14 @@ p {
 }
 
 .download-button {
+  transition: background-color 0.3s ease;
   padding: 8px 12px; /* Adjust button padding */
   font-size: 14px; /* Adjust font size */
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -117,7 +148,7 @@ p {
 }
 
 .download-button:hover {
-  background-color: var(--text-secondary);
+  background-color: var(--black);
 }
 
 .accent-svg {

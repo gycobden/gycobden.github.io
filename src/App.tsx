@@ -138,12 +138,16 @@ function App() {
         <div className='top-banner'>
           <img src={Banner} alt="A cherry blossom tree" className="banner-image" />
         </div>
+        {/* <div className="navigation-banner">
+          <button className="nav-button" onClick={() => window.location.href = "#about"}>About Me</button>
+          <button className="nav-button" onClick={() => window.location.href = "#blog"}>Blog</button>
+        </div> */}
         <div className="header-row">
           <div className="profile-info">
             <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
             <div className="name-and-resume">
               <h1>{yourName}</h1>
-              <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+              <a href="https://gycobden.github.io/gycobden_github.io/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
                 <button className="download-button">Graham's Resume</button>
               </a>
             </div>

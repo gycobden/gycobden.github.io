@@ -19,7 +19,7 @@ const Contact: React.FC<ContactSectionProps> = ({ emailAddress, linkedinURL, git
       <div className="contact-options" aria-hidden="true">
         {emailAddress && (
           <div className="contact-option" title={`Click to email ${emailAddress}`}>
-            <FontAwesomeIcon icon={faEnvelope} size="xs" className="icon"/>
+            <FontAwesomeIcon icon={faEnvelope} size="xl" className="icon"/>
             <a href={`mailto:${emailAddress}`} aria-label={`Email ${emailAddress}`}>
               {emailAddress}
             </a>
@@ -27,7 +27,7 @@ const Contact: React.FC<ContactSectionProps> = ({ emailAddress, linkedinURL, git
         )}
         {linkedinURL && (
           <div className="contact-option" title="Visit LinkedIn profile">
-            <FontAwesomeIcon icon={faLinkedin} size="xs" className="icon"/>
+            <FontAwesomeIcon icon={faLinkedin} size="xl" className="icon"/>
             <a href={linkedinURL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
               LinkedIn
             </a>
@@ -35,7 +35,7 @@ const Contact: React.FC<ContactSectionProps> = ({ emailAddress, linkedinURL, git
         )}
         {githubURL && (
           <div className="contact-option" title="Visit GitHub profile">
-            <FontAwesomeIcon icon={faGithub} size="xs" className="icon"/>
+            <FontAwesomeIcon icon={faGithub} size="xl" className="icon"/>
             <a href={githubURL} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
               GitHub
             </a>
