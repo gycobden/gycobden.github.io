@@ -113,12 +113,13 @@ function App() {
           + "storage, a primitive frequency based ranking system, and a (sometimes) working domain!",
       learnMoreURL: "https://github.com/gycobden/Mini-Google"
     }
-    //, {
-    //   image: project2Thumbnail,
-    //   imageAltText: "An application welcome screen of the software PathKit",
-    //   title: "Project 2",
-    //   description: "Add project description here."
-    // },
+    , {
+      image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/7cf51e188450701.65b6d6991d38d.png',
+      imageAltText: "yada yada yada",
+      title: "No Deception",
+      description: "No Deception is a chrome deception aimed at highlighting disinformation in multiple forms of media. Currently a work in progress.",
+      learnMoreURL: "https://github.com/gycobden/No-Deception"
+    },
     // Add more projects as needed
   ];
 

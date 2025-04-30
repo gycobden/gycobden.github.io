@@ -8,6 +8,11 @@
   --nav-banner: hsl(41, 53%, 69%);
   --nav-button: #aaa17e;
   --nav-button-hover: #ffce7a;
+  --project-background: #770057;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -132,8 +137,8 @@ p {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: auto;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -332,7 +337,7 @@ p {
 .project {
   padding: 10px;
   border-radius: 5px;
-  background-color: var(--secondary); 
+  background-color: var(--project-background); /* Default background color */
   flex: 0 1 calc(33.33% - 10px); /* Three projects per row */
   margin-bottom: 20px; /* Adjust spacing between projects */
 }
@@ -365,13 +370,20 @@ p {
   margin-bottom: 10px;
 }
 
+.project img:hover {
+  filter: brightness(0.8); /* Darken the image on hover */
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
 .project-title {
   color: var(--text-primary); /* Adjust to your desired color */
   text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
 .project-title:hover {
   text-decoration: underline; /* Add underline on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
   color: var(--text-secondary); /* Change color on hover */
 }
 
