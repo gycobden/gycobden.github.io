@@ -5,9 +5,9 @@
   --white: #fff;
   --secondary: #1783be;
   --primary: #f8f6f6;
-  --nav-banner: #d99d5e;
-  --nav-button: #a75400;
-  --nav-button-hover: #ffb76b;
+  --nav-banner: hsl(41, 53%, 69%);
+  --nav-button: #aaa17e;
+  --nav-button-hover: #ffce7a;
 }
 
 #root {
@@ -20,8 +20,8 @@
   background-color: var(--nav-banner); /* Adjust to your desired background color */
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
-  gap: 10px; /* Add spacing between buttons */
-  padding: 7px 0; /* Add vertical padding */
+  gap: 8px; /* Add spacing between buttons */
+  padding: 5px 0; /* Add vertical padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
@@ -29,7 +29,7 @@
   background-color: var(--nav-button); /* Adjust to your desired button color */
   color: var(--white); /* Button text color */
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -64,7 +64,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Arial', Courier, sans-serif;
 }
 
 h2 {
@@ -283,6 +283,21 @@ p {
   margin-left: 20px;
 }
 
+.company-icon {
+  width: 130px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Space between icon and text */
+  margin-bottom: 20px;
+  vertical-align: middle; /* Align icon with text */
+  transition: ease-in-out 0.3s; /* Smooth transition for hover effect */
+}
+
+.company-icon:hover {
+  transform: scale(1.2); /* Scale up on hover */
+  /* transition: transform 0.3s  */
+  color: var(--text-primary);
+}
+
 .projects {
   display: flex;
   justify-content: space-around;
@@ -348,6 +363,16 @@ p {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.project-title {
+  color: var(--text-primary); /* Adjust to your desired color */
+  text-decoration: none; /* Remove underline */
+}
+
+.project-title:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: var(--text-secondary); /* Change color on hover */
 }
 
 .sr-only {

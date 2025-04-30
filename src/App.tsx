@@ -7,10 +7,11 @@ import Experience from './sections/Experience';
 import Project from './sections/Project';
 import Skill from './sections/Skill';
 import Banner from './assets/okameheader.jpg';
+import synaptechLogo from './assets/dark_synaptech_logo_transparent.png';
 
 // TODO: replace asset images with your own
 import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
-import accentSVG from './assets/vecteezy_cherry-blossom-free-vector-background_16808159.svg';
+// import accentSVG from './assets/vecteezy_cherry-blossom-free-vector-background_16808159.svg';
 import project1Thumbnail from './assets/minigoogle.png';
 // import project2Thumbnail from './assets/project2-thumbnail.png';
 
@@ -51,15 +52,16 @@ function App() {
     + 'how to cook (passably)!',
     github: yourGithub,
     linkedin: yourLinkedin,
-    decorativeImage: accentSVG,
+    // decorativeImage: accentSVG,
     altText: '6 tropical leaves with pink and green colors',
   };
 
   const userExperiences = [ //TODO: Replace with your experiance
     {
-      position: 'Software Developer',
+      position: 'Software Developer, Synaptech',
       date: 'October 2023 - present',
       company: 'Synaptech, Seattle, WA',
+      companyIcon: synaptechLogo,
       companyLink: 'https://synaptechuw.org/',
       highlights: [
         'Developed movement functions in Python for Arduino-based car controlled by eye movement',
@@ -74,6 +76,7 @@ function App() {
       position: 'Backend Developer, Insider team',
       date: 'December 2023 - June 2024',
       company: 'Husky Coding Project',
+      companyIcon: 'https://hcp-uw.vercel.app/HCPLogoText-Crop.webp',
       companyLink: 'https://hcp-uw.vercel.app/',
       highlights: [
         'Led the back-end development for a website that analyzes real-time data on politician trades, exposing possible'
@@ -108,7 +111,7 @@ function App() {
       description: "Built lightweight search engine from scratch with C and C++."  
           + "The project contains custom-designed data structures, disk-based "
           + "storage, a primitive frequency based ranking system, and a (sometimes) working domain!",
-      // learnMoreURL: "https://leejmorel.github.io/#/"
+      learnMoreURL: "https://github.com/gycobden/Mini-Google"
     }
     //, {
     //   image: project2Thumbnail,
@@ -138,17 +141,22 @@ function App() {
         <div className='top-banner'>
           <img src={Banner} alt="A cherry blossom tree" className="banner-image" />
         </div>
-        {/* <div className="navigation-banner">
+        <div className="navigation-banner">
           <button className="nav-button" onClick={() => window.location.href = "#about"}>About Me</button>
-          <button className="nav-button" onClick={() => window.location.href = "#blog"}>Blog</button>
-        </div> */}
+          <button
+  className="nav-button"
+  onClick={() => window.open('https://blog.planview.com/wp-content/uploads/2020/02/limiting-work-in-progress.jpg', '_blank')}
+>
+  Blog
+</button>
+        </div>
         <div className="header-row">
           <div className="profile-info">
             <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
             <div className="name-and-resume">
               <h1>{yourName}</h1>
-              <a href="https://gycobden.github.io/gycobden_github.io/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
-                <button className="download-button">Graham's Resume</button>
+              <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+                <button className="download-button">Resume Download</button>
               </a>
             </div>
           </div>
@@ -181,7 +189,7 @@ function App() {
       </main>
 
       <footer>
-        <p>&copy; 2024 {yourName} | <a href="https://leejmorel.github.io/#/">Designed by Lee J Morel</a></p>
+        <p>&copy; 2025 {yourName} | <a href="https://leejmorel.github.io/#/">Designed by Lee J Morel</a></p>
       </footer>
     </div>
   );

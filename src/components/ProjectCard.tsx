@@ -12,7 +12,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, imageAltText, title, d
   return (
     <div className="project">
       <img src={image} alt={imageAltText} />
-      <h3>{title}</h3>
+      <h3 className="project-title">
+        {learnMoreURL ? (
+          <a href={learnMoreURL} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>
+        ) : (
+          title
+        )}
+      </h3>
       <p>{description}</p>
       {learnMoreURL && <a href={learnMoreURL}>Learn More</a>}
     </div>

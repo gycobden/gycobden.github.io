@@ -7,7 +7,7 @@ interface AboutProps {
   bio: string;
   github?: string;
   linkedin?: string;
-  decorativeImage: string;
+  // decorativeImage: string;
   altText: string;
 }
 

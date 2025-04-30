@@ -4,6 +4,7 @@ interface ExperienceProps {
     date: string;
     company: string;
     companyLink?: string;
+    companyIcon?: string;
     highlights: string[];
   }[];
 }
@@ -18,6 +19,28 @@ function Experience({ experiences }: ExperienceProps) {
           <div className="experience-item" key={index}>
             <h3>{experience.position}</h3>
             <p className="experience-date">{experience.date}</p>
+            <div>{experience.companyIcon && experience.companyLink ? (
+              <a
+                href={experience.companyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="company-icon-link"
+              >
+                <img
+                  src={experience.companyIcon}
+                  alt={`${experience.company} logo`}
+                  className="company-icon"
+                />
+              </a>
+            ) : (
+              experience.companyIcon && (
+                <img
+                  src={experience.companyIcon}
+                  alt={`${experience.company} logo`}
+                  className="company-icon"
+                />
+              )
+            )} </div>
             {experience.companyLink ? (
               <a
                 href={experience.companyLink}
