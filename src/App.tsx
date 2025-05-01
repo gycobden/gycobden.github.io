@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home'; // Import Home page
 import Blog from './Blog'; // Import Blog page
 import Banner from './assets/okameheader.jpg';
-import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
+// import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
 
 function App() {
   const yourName = "Graham Cobden";

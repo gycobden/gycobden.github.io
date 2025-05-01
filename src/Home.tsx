@@ -7,7 +7,7 @@ import Experience from './sections/Experience';
 import Project from './sections/Project';
 import Skill from './sections/Skill';
 import Blog from './Blog'; // Import Blog section
-import Banner from './assets/okameheader.jpg';
+// import Banner from './assets/okameheader.jpg';
 import synaptechLogo from './assets/dark_synaptech_logo_transparent.png';
 
 // TODO: replace asset images with your own
