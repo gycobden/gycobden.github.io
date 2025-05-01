@@ -154,12 +154,10 @@ function App() {
         <div className="header-row">
           <div className="profile-info">
             <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
-            <div className="name-and-resume">
-              <h1>{yourName}</h1>
-              <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
-                <button className="download-button">Resume Download</button>
-              </a>
-            </div>
+            <h1>{yourName}</h1>
+            <a href="/Cobden_Graham_2027.pdf" download="Cobden_Graham_2027.pdf">
+              <button className="download-button">Resume Download</button>
+            </a>
           </div>
         </div>
 

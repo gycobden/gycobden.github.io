@@ -1,14 +1,14 @@
 :root {
   --text-primary: #850012;
-  --text-secondary: #d1fcff;
+  --text-secondary: #e0fff3;
   --black: #0f0e0e;
   --white: #fff;
-  --secondary: #1783be;
+  --secondary: #3a7798;
   --primary: #f8f6f6;
   --nav-banner: hsl(41, 53%, 69%);
-  --nav-button: #aaa17e;
-  --nav-button-hover: #ffce7a;
-  --project-background: #770057;
+  --nav-button: #b8aa74;
+  --nav-button-hover: #997332;
+  --project-background: #520020;
 }
 
 html {
@@ -39,6 +39,7 @@ html {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 .nav-button:hover {
@@ -72,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Arial', Courier, sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 h2 {
   font-size:35px;
 }
@@ -80,7 +86,7 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   color: var(--black);
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Ariel', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -122,29 +128,21 @@ p {
   display: flex;
   align-items: center; /* Align items vertically */
   gap: 0px; /* Add spacing between the profile picture and the name/button */
-}
-
-.name-and-resume {
-  display: flex;
-  align-items: center; /* Align the name and button vertically */
-  gap: 30px; /* Add spacing between the name and the button */
-}
-
-.download-button {
-  transition: background-color 0.3s ease;
-  padding: 8px 12px; /* Adjust button padding */
-  font-size: 14px; /* Adjust font size */
+  font-size: 20px;
 }
 
 .profile-pic {
-  width: 120px;
+  width: 140px;
   height: auto;
   border-radius: 50%;
   margin-right: 20px;
 }
 
 .download-button {
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Adjust font size */
   padding: 10px 20px;
+  margin-left: 20px; 
   background-color: var(--text-primary);
   color: var(--primary);
   border: none;
@@ -368,11 +366,11 @@ p {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
 }
 
 .project img:hover {
   filter: brightness(0.8); /* Darken the image on hover */
-  transition: filter 0.3s ease-in-out; /* Smooth transition */
 }
 
 .project-title {
@@ -382,8 +380,7 @@ p {
 }
 
 .project-title:hover {
-  text-decoration: underline; /* Add underline on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
   color: var(--text-secondary); /* Change color on hover */
 }
 
