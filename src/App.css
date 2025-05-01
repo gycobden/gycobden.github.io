@@ -292,7 +292,7 @@ p {
   margin-top: 20px; /* Space between icon and text */
   margin-bottom: 20px;
   vertical-align: middle; /* Align icon with text */
-  transition: ease-in-out 0.3s; /* Smooth transition for hover effect */
+  transition: ease-in-out .3s; /* Smooth transition for hover effect */
 }
 
 .company-icon:hover {
