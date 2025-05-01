@@ -7,7 +7,7 @@ import Experience from './sections/Experience';
 import Project from './sections/Project';
 import Skill from './sections/Skill';
 import Blog from './Blog'; // Import Blog section
-// import Banner from './assets/okameheader.jpg';
+import Banner from './assets/okameheader.jpg';
 import synaptechLogo from './assets/dark_synaptech_logo_transparent.png';
 
 // TODO: replace asset images with your own
@@ -141,13 +141,13 @@ function App() {
     <div className="app">
       {/* Header section */}
       <header>
-        {/* <div className='top-banner'>
+        <div className='top-banner'>
           <img src={Banner} alt="A cherry blossom tree" className="banner-image" />
         </div>
         <div className="navigation-banner">
           <button className="nav-button" onClick={() => window.location.href = "#about"}>About Me</button>
           <button className="nav-button" onClick={() => window.location.href = "blog.html"}>Blog</button>
-        </div> */}
+        </div>
         <div className="header-row">
           <div className="profile-info">
             <img src={profilePic} alt={yourProfilePictureAltText} className="profile-pic" />
