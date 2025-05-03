@@ -17,7 +17,7 @@ function About({ name, role, bio, github, linkedin/*, decorativeImage, altText *
       <div className="section">
       <div className="about-content">
         <div className="about-text">
-          <h2>About Me</h2>
+          {/* <h2>About Me</h2> */}
           <div className="about-text-wrapper">
             <p>{`My name's ${name}, ${role}. ${bio}`}</p>
           </div>

@@ -31,6 +31,7 @@ html {
 }
 
 .nav-button {
+  -webkit-tap-highlight-color: transparent;
   background-color: var(--nav-button); /* Adjust to your desired button color */
   color: var(--white); /* Button text color */
   border: none;
@@ -421,3 +422,44 @@ footer a:hover {
   color: var(--text-primary); /* Change color on hover */
 }
 
+
+
+/* blog section */
+.featured-articles {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align children to the left */
+  gap: 20px; /* Add spacing between children */
+  margin-top: 20px; /* Add space below the header */
+  margin-left: 10%; /* Align to the left */
+}
+
+.featured-article {
+  width: 100%; /* Ensure it spans the container */
+  max-width: 600px; /* Optional: Limit the width */
+  padding: 10px;
+  border-radius: 0px;
+  background-color: var(--primary); /* Optional: Add a background color */
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.featured-article p {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 25px; /* Optional: Add spacing between paragraphs */
+
+}
+
+.featured-article h2 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: var(--black); /* Adjust to your desired color */
+}
+
+.featured-article img {
+  width: 70%; /* Ensure it spans the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 10px; /* Optional: Add spacing below the image */
+}

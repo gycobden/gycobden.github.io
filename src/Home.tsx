@@ -1,4 +1,3 @@
-//imports CSS style and sections to be included.
 import './App.css';
 import About from './sections/About';
 import Contact from './sections/Contact';
@@ -7,6 +6,7 @@ import Experience from './sections/Experience';
 import Project from './sections/Project';
 import Skill from './sections/Skill';
 import Blog from './Blog'; // Import Blog section
+// import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 // import Banner from './assets/okameheader.jpg';
 import synaptechLogo from './assets/dark_synaptech_logo_transparent.png';
 
@@ -159,17 +159,17 @@ function Home() {
         </div>
 
         {/*Navigation Links*/}
-        <nav>
+        {/* <nav>
           <ul>
             {visibleSections.map((section) => (
               showSections[section.key] && (
                 <li key={section.key}>
-                  <a href={`#${section.key}`}>{section.key.charAt(0).toUpperCase() + section.key.slice(1)}</a>
+                  <a href={`#/#${section.key}`}>{section.key.charAt(0).toUpperCase() + section.key.slice(1)}</a>
                 </li>
               )
             ))}
           </ul>
-        </nav>
+        </nav> */}
 
       </header>
 
