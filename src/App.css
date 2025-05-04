@@ -491,6 +491,8 @@ footer a:hover {
   display: flex;
   gap: 20px; /* Add spacing between children */
   margin-top: 20px; /* Add space below the header */
+  /* make articles rows of two */
+  
 }
 
 .blog-article {
@@ -504,13 +506,14 @@ footer a:hover {
 }
 
 .blog-card {
-  width: 50%; /* Ensure it spans the container */
+  width: 45%; /* Ensure it spans the container */
   max-width: 600px; /* Optional: Limit the width */
   padding: 10px;
   border-radius: 0px;
   background-color: var(--primary); /* Optional: Add a background color */
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  margin-bottom: 20px; /* Add space below each card */
 }
 
 .blog-card img {

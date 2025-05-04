@@ -44,6 +44,13 @@ const articles = [
     date: "5/2/2025",
     image: "https://media.discordapp.net/attachments/1202762265065947209/1368124866623963156/LIBERTY-FB-MATRIX-v2-Image2.png?ex=68171512&is=6815c392&hm=0e1668af18af86dd659663f8c032068c647d70438e1af8db2fd213eeaee94b0e&=&format=webp&quality=lossless&width=1645&height=856",
     readMoreURL: "/blog/big-data-and-you",
+  },
+  {
+    title: "Privacy is the New Dollar",
+    description: "When everything is free, you are the product.",
+    date: "5/2/2025",
+    image: "https://dataprivacymanager.net/wp-content/uploads/2019/10/Data-Privacy-vs.-Data-Security.png",
+    readMoreURL: "/blog/privacy-is-the-new-dollar",
   }
 ]
 
@@ -59,7 +66,7 @@ const Blog: React.FC = () => {
       </header>
       <section className = "blog-articles-container">
         <div className = "featured-articles">
-          <h2>Most Recent</h2>
+          <h2>Featured</h2>
           {featuredArticles.map((article) => (
             featuredArticle(article)
           ))}
