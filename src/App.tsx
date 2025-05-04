@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home'; // Import Home page
 import Blog from './Blog'; // Import Blog page
 import Banner from './assets/okameheader.jpg';
+import ArticlePage from './ArticlePage'; // Import Article page
 // import profilePic from './assets/2025-04-04 15.51.46-2.jpg';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} /> {/* Home page */}
           <Route path="/blog" element={<Blog />} /> {/* Blog page */}
+          <Route path="/blog/:articleName" element={<ArticlePage />} /> {/* Dynamic article page */}
         </Routes>
       </div>
     </Router>
